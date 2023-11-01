@@ -5,7 +5,7 @@ def main():
     print(person_1.life_expectancy)
 
     person_2 = Person()
-    person_2.life_expectancy = 80
+    person_2.life_expectancy = 85
     print(person_2.life_expectancy)
 
 if __name__ == '__main__':
