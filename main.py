@@ -1,15 +1,12 @@
-from package.packing_unpacking import *
-
-def packing_unpacking_print():
-    req = {
-        "username": "Joao",
-        "password": "1234",
-        "sum_list": [1,2,3,4,5,6,7,8,9,10]
-    }
-    func_args(*req["sum_list"])
+from persons.person import Person
 
 def main():
-    packing_unpacking_print()
+    person_1 = Person()
+    print(person_1.life_expectancy)
 
-if __name__ == "__main__":
+    person_2 = Person()
+    person_2.life_expectancy = 80
+    print(person_2.life_expectancy)
+
+if __name__ == '__main__':
     main()
